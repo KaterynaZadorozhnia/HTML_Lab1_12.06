@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <style>
+        table{
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        thead>tr, tfoot>tr{
+            background: grey;
+            color: white;
+        }
+        tbody>tr:nth-of-type(odd){
+            background: darkgrey;
+            color: white;
+        }
+        tbody>tr:nth-of-type(even){
+            background: lightgrey;
+            color: white;
+        }
+        caption{
+            font-size: 30px;
+            text-shadow: 1px 1px 2px black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<table cellpadding="10" cellspacing="10" width="50%">
+    <caption>Таблица покупки рабов</caption>
+    <thead>
+    <tr>
+        <th>№ п/п</th><th>Пол</th><th>Вес</th><th>Возраст</th><th>Навыки</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td><td>Мужчина</td><td>80кг</td><td>25</td><td>Копать картошку</td>
+    </tr>
+    <tr>
+        <td>2</td><td>Женщина</td><td>60кг</td><td>31</td><td>Доить коров</td>
+    </tr>
+    <tr>
+        <td>3</td><td>Мужчина</td><td>85кг</td><td>45</td><td>Хороший муж</td>
+    </tr>
+    <tr>
+        <td>4</td><td>Женщина</td><td>45кг</td><td>40</td><td>Повор</td>
+    </tr>
+    <tr>
+        <td>5</td><td rowspan="4">Мужчина</td><td>80кг</td><td>25</td><td>Копать картошку</td>
+    </tr>
+    <tr>
+        <td>6</td><!--<td>Мужчина</td>--><td>80кг</td><td>25</td><td>Копать картошку</td>
+    </tr>
+    <tr>
+        <td>7</td><!--<td>Мужчина</td>--><td>80</td><td>25</td><td>Копать картошку</td>
+    </tr>
+    <tr>
+        <td>8</td><!--<td>Мужчина</td>--><td>80</td><td>25</td><td>Копать картошку</td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <tr><td colspan="4">ИТОГ</td><!--<td></td><td></td><td></td>--><td>40</td></tr>
+    </tfoot>
+</table>
+</body>
+</html>
